@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
   });
 
-  $('.side-nav li, .outer-nav li').click(function(){
+  $('.side-nav li, .outer-nav li, .arrow-container').click(function(){
 
     if (!($(this).hasClass('is-active'))) {
 
@@ -62,6 +62,8 @@ $( document ).ready(function() {
     updateContent(curPos, nextPos, lastItem);
 
   });
+
+ 
 
   // swipe support for touch devices
   var targetElement = document.getElementById('viewport'),
